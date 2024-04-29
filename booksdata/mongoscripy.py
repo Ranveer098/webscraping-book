@@ -9,7 +9,8 @@ post = {
     "author": "Mike",
     "text": "My first blog post!",
     "tags": ["mongodb", "python", "pymongo"],
-    "date": datetime.datetime.now(tz=datetime.timezone.utc),
+    "date": datetime.datetime.utnow(),
 }
+
 
 post_id = collection.insert_one(post).inserted_id
